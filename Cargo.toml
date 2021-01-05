@@ -10,7 +10,7 @@ description = "Sparse merkle tree implement in rust"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [features]
-default = ["std", "blake2b"]
+default = ["std"]
 std = []
 blake2b = ["blake2b-rs"]
 
