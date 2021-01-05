@@ -12,7 +12,7 @@ description = "Sparse merkle tree implement in rust"
 [features]
 default = ["std", "blake2b"]
 std = []
-blake2b = []
+blake2b = ["blake2b-rs"]
 
 [dependencies]
 cfg-if = "0.1"
