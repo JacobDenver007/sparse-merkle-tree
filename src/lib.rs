@@ -1,7 +1,5 @@
 #![cfg_attr(not(feature = "std"), no_std)]
 
-#[cfg(feature = "blake2b")]
-#[cfg(feature = "blake2b-no-std")]
 pub mod blake2b;
 pub mod default_store;
 pub mod error;
