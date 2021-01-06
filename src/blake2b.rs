@@ -1,12 +1,6 @@
 use crate::{traits::Hasher, H256};
 
-cfg_if::cfg_if! {
-    if #[cfg(feature = "blake2b-no-std")] {
-        use blake2b_ref::{Blake2b, Blake2bBuilder};
-    } else {
-        use blake2b_rs::{Blake2b, Blake2bBuilder};
-    }
-}
+use blake2b_ref::{Blake2b, Blake2bBuilder};
 
 const BLAKE2B_KEY: &[u8] = &[];
 const BLAKE2B_LEN: usize = 32;

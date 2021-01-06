@@ -10,15 +10,13 @@ description = "Sparse merkle tree implement in rust"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [features]
-default = ["std", "blake2b"]
+default = ["std"]
 std = []
-blake2b = ["blake2b-rs"]
-blake2b-no-std = ["blake2b-ref"]
+blake2b-no-std = []
 
 [dependencies]
 cfg-if = "0.1"
-blake2b-rs = { version = "0.1", optional = true }
-blake2b-ref = { git = "https://github.com/jjyr/blake2b-ref.rs.git", rev = "6c88968", optional = true}
+blake2b-ref = { git = "https://github.com/jjyr/blake2b-ref.rs.git", rev = "6c88968"}
 
 [dev-dependencies]
 proptest = "0.9"
